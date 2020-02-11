@@ -1,11 +1,16 @@
 <template lang="pug">
 #Home
-  h1 hello world
+  Loader
 </template>
 
 <script>
+import Loader from '../components/Loader.vue'
+
 export default {
-  name: 'Home'
+  name: 'Home',
+  components: {
+    Loader
+  },
 }
 </script>
 
