@@ -1,0 +1,69 @@
+{
+  "data": {
+    "1": {
+      "delay": 2000,
+      "title": "Bonjour et bienvenue.",
+      "next": "2",
+      "type": "question"
+    },
+    "2": {
+      "delay": 2000,
+      "title": "Je m'appelle Basile et je suis un assistant intelligent. Je vais vous assister dans la création de votre entreprise.",
+      "next": "3",
+      "type": "question"
+    },
+    "3": {
+      "answers": {
+        "001": {
+          "linkTo": "4",
+          "title": "Oui, j'ai une idée",
+          "type": "answer"
+        },
+        "002": {
+          "linkTo": "5",
+          "title": "Non, je n'ai pas d'idée",
+          "type": "answer"
+        }
+      },
+      "delay": 2000,
+      "title": "Avez-vous déjà une idée d'entreprise?",
+      "type": "question"
+    },
+    "4": {
+      "answers": {
+        "001": {
+          "linkTo": "6",
+          "title": "Oui",
+          "type": "answer"
+        },
+        "002": {
+          "linkTo": "7",
+          "title": "Pas encore",
+          "type": "answer"
+        }
+      },
+      "delay": 1500,
+      "loading": "false",
+      "title": "Avez-vous déjà testé votre marché?",
+      "type": "question"
+    },
+    "5": {
+      "answers": {
+        "001": {
+          "linkTo": "6",
+          "title": "Oui",
+          "type": "answer"
+        },
+        "002": {
+          "linkTo": "7",
+          "title": "Pas encore",
+          "type": "answer"
+        }
+      },
+      "delay": 1500,
+      "loading": "false",
+      "title": "Avez-vous un domaine de prédilection?",
+      "type": "question"
+    }
+  }
+}
