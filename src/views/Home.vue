@@ -1,16 +1,31 @@
 <template lang="pug">
 #Home
-  Loader
+  Loader(v-if="showLoader")
+  Timeline
 </template>
 
 <script>
 import Loader from '../components/Loader.vue'
+import Timeline from '../components/Timeline.vue'
+import botpng from '../assets/bot.png'
 
 export default {
   name: 'Home',
   components: {
-    Loader
+    Loader,
+    Timeline
   },
+  data() {
+    return {
+      botpng,
+      showLoader: false
+    }
+  },
+  mounted() {
+    setTimeout(() => {
+      this.showLoader = false
+    }, 10000)
+  }
 }
 </script>
 
@@ -18,6 +33,10 @@ export default {
 #Home {
   img {
     max-width: 400px;
+  }
+  #logo {
+    max-width: 75px;
+    margin-bottom: 25px;
   }
 }
 </style>
