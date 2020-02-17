@@ -2,68 +2,114 @@
   "data": {
     "1": {
       "delay": 2000,
-      "title": "Bonjour et bienvenue.",
       "next": "2",
-      "type": "question"
+      "origin": "bot",
+      "title": "Bonjour et bienvenue.",
+      "type": "questionTitle"
     },
     "2": {
+      "answers": {
+        "001": {
+          "linkTo": "3",
+          "origin": "userAnswer",
+          "title": "Lentilles vertes",
+          "type": "answer"
+        },
+        "002": {
+          "linkTo": "4",
+          "origin": "userAnswer",
+          "title": "Lentilles corails",
+          "type": "answer"
+        },
+        "003": {
+          "linkTo": "5",
+          "origin": "userAnswer",
+          "title": "Tofu",
+          "type": "answer"
+        },
+        "004": {
+          "linkTo": "6",
+          "origin": "userAnswer",
+          "title": "Tempeh",
+          "type": "answer"
+        }
+      },
       "delay": 2000,
-      "title": "Je m'appelle Basile et je suis un assistant intelligent. Je vais vous assister dans la création de votre entreprise.",
-      "next": "3",
-      "type": "question"
+      "origin": "bot",
+      "title": "Quelles sources de protéines avez-vous dans vos placards?",
+      "type": "questionTitle"
     },
     "3": {
-      "answers": {
-        "001": {
-          "linkTo": "4",
-          "title": "Oui, j'ai une idée",
-          "type": "answer"
-        },
-        "002": {
-          "linkTo": "5",
-          "title": "Non, je n'ai pas d'idée",
-          "type": "answer"
-        }
-      },
       "delay": 2000,
-      "title": "Avez-vous déjà une idée d'entreprise?",
-      "type": "question"
+      "description": "Préparation: 20mn / Cuisson: 20mn / Coût: €€--",
+      "imgSrc": "https://mes-recettes-vegan.com/wp-content/uploads/2020/02/IMG_3254-2-1860x1488.jpeg",
+      "origin": "bot",
+      "next": "7",
+      "title": "Lentilles aux carottes",
+      "toUrl": "https://mes-recettes-vegan.com/lentilles-aux-carottes/",
+      "type": "answerLink"
     },
     "4": {
-      "answers": {
-        "001": {
-          "linkTo": "6",
-          "title": "Oui",
-          "type": "answer"
-        },
-        "002": {
-          "linkTo": "7",
-          "title": "Pas encore",
-          "type": "answer"
-        }
-      },
-      "delay": 1500,
-      "loading": "false",
-      "title": "Avez-vous déjà testé votre marché?",
-      "type": "question"
+      "delay": 2000,
+      "description": "Préparation: 20mn / Cuisson: 20mn / Coût: €€--",
+      "imgSrc": "https://mes-recettes-vegan.com/wp-content/uploads/2020/01/IMG_0315-min-1860x1321.jpeg",
+      "origin": "bot",
+      "next": "7",
+      "title": "Bowl: curry lentilles corail & tomates séchées",
+      "toUrl": "https://mes-recettes-vegan.com/bowl-curry-lentilles-corail-tomates-sechees/",
+      "type": "answerLink"
     },
     "5": {
+      "delay": 2000,
+      "description": "Préparation: 10mn / Cuisson: 5mn / Coût: €---",
+      "imgSrc": "https://mes-recettes-vegan.com/wp-content/uploads/2020/01/IMG_0175-2-min-1860x1395.jpeg",
+      "origin": "bot",
+      "next": "7",
+      "title": "Bowl choux de Bruxelles & tofu brouillé",
+      "toUrl": "https://mes-recettes-vegan.com/bowl-choux-de-bruxelles-tofu-brouille/",
+      "type": "answerLink"
+    },
+    "6": {
+      "delay": 2000,
+      "description": "Préparation: 20mn / Cuisson: 15mn + 10mn / Coût: €---",
+      "imgSrc": "https://mes-recettes-vegan.com/wp-content/uploads/2019/11/IMG_2577-min-1860x1366.jpeg",
+      "origin": "bot",
+      "next": "7",
+      "title": "Pâtes aux poireaux et lardons de tempeh",
+      "toUrl": "https://mes-recettes-vegan.com/pates-aux-poireaux-et-lardons-de-tempeh/",
+      "type": "answerLink"
+    },
+    "7": {
       "answers": {
         "001": {
-          "linkTo": "6",
-          "title": "Oui",
+          "linkTo": "3",
+          "origin": "userAnswer",
+          "title": "Lentilles vertes",
           "type": "answer"
         },
         "002": {
-          "linkTo": "7",
-          "title": "Pas encore",
+          "linkTo": "4",
+          "origin": "userAnswer",
+          "title": "Lentilles corails",
+          "type": "answer"
+        },
+        "003": {
+          "linkTo": "5",
+          "origin": "userAnswer",
+          "title": "Tofu",
+          "type": "answer"
+        },
+        "004": {
+          "linkTo": "6",
+          "origin": "userAnswer",
+          "title": "Tempeh",
           "type": "answer"
         }
       },
-      "delay": 1500,
-      "loading": "false",
-      "title": "Avez-vous un domaine de prédilection?",
-      "type": "question"
+      "delay": 50,
+      "origin": "bot",
+      "title": "Sélectionnez une autre source de protéines",
+      "type": "questionTitle"
     }
   }
 }
