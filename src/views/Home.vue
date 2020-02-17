@@ -6,6 +6,7 @@
 
 <script>
 import Loader from '../components/Loader.vue'
+import TestSide from '../components/TestSide.vue'
 import Timeline from '../components/Timeline.vue'
 import botpng from '../assets/bot.png'
 
@@ -13,7 +14,8 @@ export default {
   name: 'Home',
   components: {
     Loader,
-    Timeline
+    Timeline,
+    TestSide
   },
   data() {
     return {
