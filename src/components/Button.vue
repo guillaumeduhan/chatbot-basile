@@ -1,6 +1,6 @@
 <template lang="pug">
   .button(:class="classType")
-    .link-content-container(v-if="linkContent")
+    .link-content-container(v-if="linkContent", @click="openUrl")
       .link-image(:style="{ backgroundImage: `url(${linkContent.imgSrc})` }")
       .link-content.d-flex.align-items-end.justify-content-between
         .link-text
@@ -24,6 +24,13 @@ export default {
   data() {
     return {
       linkImg
+    }
+  },
+  methods: {
+    openUrl() {
+      if (this.linkContent.toUrl) {
+        window.open(this.linkContent.toUrl, '_blank')
+      }
     }
   }
 }
@@ -81,6 +88,7 @@ export default {
           text-align: left;
 
           .link-image-link {
+            min-width: 30px;
             img {
               width: 25px;
             }
