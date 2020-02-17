@@ -2,8 +2,8 @@
   .Timeline.d-flex.flex-column.justify-content-end.align-items-center
     .Timeline--content
       .Timeline--model(v-for="(line, index) in conversation", :key="index")
-        Question(v-if="line.type === 'question'", :title="line.title")
-        Answer(v-if="line.type === 'answer'", :title="line.title")
+        BotInteraction(v-if="line.origin === 'bot'", :content="line")
+        Answer(v-else, :title="line.title")
     TypingLoader(v-if="loading")
     .Timeline--options.d-flex.align-items-center.justify-content-center
       Button(v-if="answers.length", v-for="(answer, index) in answers", :key="index", :title="answer.title", classType="option", @click.native="pushAnswer(answer)")
@@ -12,7 +12,7 @@
 <script>
 import Answer from './messages/Answer.vue'
 import Button from './Button.vue'
-import Question from './messages/Question.vue'
+import BotInteraction from './messages/BotInteraction.vue'
 import TestSide from './TestSide.vue'
 import TypingLoader from './TypingLoader.vue'
 
@@ -23,7 +23,7 @@ export default {
   components: {
     Answer,
     Button,
-    Question,
+    BotInteraction,
     TestSide,
     TypingLoader
   },
