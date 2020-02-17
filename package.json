@@ -2,14 +2,11 @@
   "name": "Chatbot-Basile",
   "version": "0.0.1",
   "author": "Guillaume Duhan",
-  "contributors": [
-    "kaangokdemir",
-    "malinsdd"
-  ],
   "main": "server.js",
   "description": "A vue.js chatbot for entrepreneurs.",
   "private": true,
   "scripts": {
+    "start": "node server.js",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
