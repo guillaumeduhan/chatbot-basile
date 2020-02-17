@@ -56,6 +56,8 @@ export default {
       height: 75px;
       position: relative;
       margin-bottom: 25px;
+      border-radius: 50px;
+      overflow: hidden;
 
       #botLoaderImage {
         max-width: 75px;
