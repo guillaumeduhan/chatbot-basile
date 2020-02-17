@@ -36,6 +36,7 @@ export default {
       max-width: 40px;
       overflow: hidden;
       margin: 4px;
+      border-radius: 40px;
       #basileQuestionThumbnail {
         max-width: 40px;
       }
