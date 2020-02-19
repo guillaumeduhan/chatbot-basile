@@ -36,7 +36,7 @@ export default {
   }
   .question {
     &--thumbnail--container {
-      max-width: 40px;
+      min-width: 40px;
       max-height: 40px;
       overflow: hidden;
       margin: 4px;
