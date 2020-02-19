@@ -9,7 +9,6 @@
         .link-image-link
           img(:src="linkImg")
     p(v-else, :class="{ 'lowerFont' : $mq === 'mobile' }") {{ title }}
-    p {{ $mq }}
 </template>
 
 <script>
