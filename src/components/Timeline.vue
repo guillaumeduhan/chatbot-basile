@@ -5,7 +5,7 @@
         BotInteraction(v-if="line.origin === 'bot'", :content="line")
         Answer(v-else, :title="line.title")
     TypingLoader(v-if="loading")
-    .Timeline--options.d-flex.align-items-center.justify-content-center
+    .Timeline--options.d-flex.align-items-center.justify-content-center(:class="{ 'flex-wrap' : $mq === 'mobile' }")
       Button(v-if="answers.length", v-for="(answer, index) in answers", :key="index", :title="answer.title", classType="option", @click.native="pushAnswer(answer)")
 </template>
 
@@ -78,10 +78,17 @@ export default {
 .Timeline {
   width: 100vw;
   height: 100vh;
-  padding: 25px;
+  padding: 15px;
 
   &--content {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .bloc {
+    display:block;
+    clear:both;
   }
 }
 </style>
