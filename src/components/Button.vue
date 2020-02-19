@@ -8,7 +8,8 @@
           .link-description {{ linkContent.description }}
         .link-image-link
           img(:src="linkImg")
-    p(v-else) {{ title }}
+    p(v-else, :class="{ 'lowerFont' : $mq === 'mobile' }") {{ title }}
+    p {{ $mq }}
 </template>
 
 <script>
@@ -61,8 +62,8 @@ export default {
     &.link {
       cursor: pointer;
       .link-content-container {
-        min-width: 400px;
-        max-width: 400px;
+        min-width: 300px;
+        max-width: 100%;
         min-height: 250px;
         border-radius: 25px;
         overflow: hidden;
@@ -82,8 +83,8 @@ export default {
           position: absolute;
           bottom: 0;
           padding: 20px;
-          min-width: 400px;
-          max-width: 400px;
+          min-width: 300px;
+          max-width: 100%;
           max-height: 150px;
           text-align: left;
 
@@ -96,11 +97,13 @@ export default {
           }
           .link-title {
             font-size: 24px;
+            line-height: 1.2;
             color: white;
             font-weight: 900;
           }
           .link-description {
             color: white;
+            line-height: 1.2;
           }
         }
       }
@@ -108,6 +111,10 @@ export default {
 
     p {
       margin: 0;
+
+      &.lowerFont {
+        font-size: 15px;
+      }
     }
   }
 </style>
