@@ -4,6 +4,14 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import _ from 'lodash'
+import VueMq from 'vue-mq'
+
+Vue.use(VueMq, {
+  breakpoints: { // default breakpoints - customize this
+    mobile: 900,
+    desktop: 1200,
+  }
+})
 
 import MyPlugin from './plugins/my-plugin'
 
